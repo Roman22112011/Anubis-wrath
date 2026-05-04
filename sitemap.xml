@@ -7,19 +7,4 @@
     <changefreq>daily</changefreq>
   </url>
 
-  <url>
-    <loc>https://anubis-wrath.vercel.app/#about</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://anubis-wrath.vercel.app/#features</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://anubis-wrath.vercel.app/#faq</loc>
-    <priority>0.7</priority>
-  </url>
-
 </urlset>
