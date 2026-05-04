@@ -4,38 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Anubis Wrath — игровой слот онлайн | Demo & обзор</title>
-  <meta name="description" content="Anubis Wrath — мистический слот в стиле Древнего Египта. Обзор игры, символы, бонусы и особенности. Играйте онлайн бесплатно."/>
-  <meta name="keywords" content="Anubis Wrath, слот, игровой автомат, Египет слот, играть онлайн, бонусные вращения, демо слот"/>
+  <title>Anubis Wrath — слот онлайн | Играть демо и на деньги</title>
+  <meta name="description" content="Anubis Wrath — мистический слот в стиле Древнего Египта. Играй демо или на деньги. Бонусы, фриспины и множители."/>
+  <meta name="keywords" content="Anubis Wrath, слот, играть онлайн, демо слот, Египет слот, казино игра"/>
   <meta name="robots" content="index, follow"/>
 
-  <!-- Yandex -->
-  <meta name="yandex-verification" content="verification-code"/>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Anubis Wrath — мистический слот онлайн"/>
-  <meta property="og:description" content="Обзор слота Anubis Wrath: бонусы, символы, особенности и демо-режим."/>
+  <!-- OG -->
+  <meta property="og:title" content="Anubis Wrath — мистический слот"/>
+  <meta property="og:description" content="Играй в демо или на деньги. Бонусные функции и фриспины."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://example.com"/>
-  <meta property="og:image" content="/anubis-og.jpg"/>
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/favicon.ico"/>
 
-  <!-- Schema.org -->
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "VideoGame",
     "name": "Anubis Wrath",
-    "genre": "Slot Machine",
-    "description": "Мистический слот в стиле Древнего Египта с бонусными функциями и бесплатным демо-режимом.",
+    "genre": "Slot",
     "applicationCategory": "Game",
     "operatingSystem": "Web Browser"
   }
   </script>
 
-  <!-- FAQ Schema -->
+  <!-- FAQ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,26 +36,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Что такое Anubis Wrath?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Это онлайн слот в тематике Древнего Египта с бонусными функциями и бесплатным режимом игры."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Можно ли играть бесплатно?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Да, доступен демо-режим без регистрации и депозита."
+          "text": "Да, доступен демо режим без вложений."
         }
       },
       {
         "@type": "Question",
-        "name": "Есть ли бонусные функции?",
+        "name": "Есть ли реальные выигрыши?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Да, в игре присутствуют фриспины, множители и специальные символы."
+          "text": "Да, при игре на деньги возможны выигрыши."
         }
       }
     ]
@@ -73,54 +58,107 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #1b1b1b, #000);
-      color: #f5d67b;
+      background: radial-gradient(circle at top, #2a004f, #000);
+      color: #fff;
     }
+
     header {
-      padding: 40px;
       text-align: center;
-      background: url('https://images.unsplash.com/photo-1604608672519-c7b4f7d1a1e0') center/cover;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #2a004f, #000);
+      position: relative;
+      overflow: hidden;
     }
-    header h1 {
-      font-size: 48px;
-      text-shadow: 0 0 10px #000;
+
+    h1 {
+      font-size: 56px;
+      color: #ff7a00;
+      text-shadow: 0 0 20px #ff7a00;
+      margin-bottom: 10px;
     }
-    nav {
-      background: #111;
-      padding: 10px;
-      text-align: center;
+
+    p {
+      color: #caa6ff;
     }
-    nav a {
-      color: #f5d67b;
-      margin: 0 15px;
+
+    /* BUTTONS */
+    .btn-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .fire-btn {
+      position: relative;
+      padding: 16px 28px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      background: linear-gradient(45deg, #ff6a00, #ffb300);
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
       text-decoration: none;
+      box-shadow: 0 0 20px rgba(255, 120, 0, 0.6);
+      overflow: hidden;
+      transition: transform 0.2s;
+      animation: pulse 1.5s infinite;
     }
+
+    .fire-btn:hover {
+      transform: scale(1.08);
+    }
+
+    /* flame animation overlay */
+    .fire-btn::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,140,0,0.6), transparent 60%);
+      animation: flame 1s infinite linear;
+      opacity: 0.6;
+    }
+
+    @keyframes flame {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #ff6a00; }
+      50% { box-shadow: 0 0 30px #ffb300; }
+      100% { box-shadow: 0 0 10px #ff6a00; }
+    }
+
     section {
-      padding: 40px;
+      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .card {
-      background: #111;
-      padding: 20px;
-      margin: 20px 0;
-      border: 1px solid #333;
-      border-radius: 10px;
+
+    h2 {
+      color: #ff9a2f;
     }
+
+    .card {
+      background: #120022;
+      border: 1px solid #2d0057;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #000;
-      font-size: 14px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: gold;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+      color: #777;
     }
   </style>
 </head>
@@ -130,68 +168,40 @@
 <header>
   <h1>ANUBIS WRATH</h1>
   <p>Мистический слот Древнего Египта</p>
-  <a class="btn" href="#play">Играть демо</a>
+
+  <div class="btn-container">
+    <a class="fire-btn" href="https://lbgame777.xyz/3nsZZj">
+      Играть на деньги
+    </a>
+
+    <a class="fire-btn" href="https://lbgame777.xyz/3nsZZj">
+      Играть демо
+    </a>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">Обзор</a>
-  <a href="#features">Особенности</a>
-  <a href="#faq">FAQ</a>
-</nav>
-
-<section id="about">
-  <h2>Обзор слота</h2>
+<section>
+  <h2>Обзор</h2>
   <div class="card">
-    <p>
-      Anubis Wrath — это атмосферный игровой слот, вдохновлённый мифологией Древнего Египта.
-      Вас ждут символы богов, золотые артефакты и бонусные вращения.
-    </p>
+    Слот Anubis Wrath выполнен в стиле Древнего Египта с бонусами, фриспинами и множителями.
   </div>
 </section>
 
-<section id="features">
-  <h2>Особенности игры</h2>
-
-  <div class="card">
-    <h3>Бонусные фриспины</h3>
-    <p>Активируются при выпадении специальных символов.</p>
-  </div>
-
-  <div class="card">
-    <h3>Множители выигрыша</h3>
-    <p>Увеличивают потенциальный выигрыш в несколько раз.</p>
-  </div>
-
-  <div class="card">
-    <h3>Демо режим</h3>
-    <p>Играйте бесплатно без регистрации.</p>
-  </div>
+<section>
+  <h2>Особенности</h2>
+  <div class="card">🔥 Бонусные вращения</div>
+  <div class="card">⚡ Множители выигрыша</div>
+  <div class="card">🎮 Демо режим</div>
 </section>
 
-<section id="faq">
+<section>
   <h2>FAQ</h2>
-
-  <div class="card">
-    <h3>Можно ли играть без денег?</h3>
-    <p>Да, доступен демо-режим.</p>
-  </div>
-
-  <div class="card">
-    <h3>Нужно ли скачивать игру?</h3>
-    <p>Нет, слот работает прямо в браузере.</p>
-  </div>
-</section>
-
-<section id="play">
-  <h2>Играть</h2>
-  <div class="card">
-    <p>Нажмите кнопку ниже, чтобы запустить демо слот:</p>
-    <a class="btn" href="#">Запустить игру</a>
-  </div>
+  <div class="card">Да, можно играть бесплатно</div>
+  <div class="card">Да, есть реальные выигрыши</div>
 </section>
 
 <footer>
-  © 2026 Anubis Wrath Demo Site
+  © 2026 Anubis Wrath
 </footer>
 
 </body>
