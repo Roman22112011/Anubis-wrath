@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anubis-wrath.vercel.app/sitemap.xml
+Host: anubis-wrath.vercel.app
