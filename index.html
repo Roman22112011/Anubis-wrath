@@ -5,160 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Anubis Wrath — слот онлайн | Играть демо и на деньги</title>
-  <meta name="description" content="Anubis Wrath — мистический слот в стиле Древнего Египта. Играй демо или на деньги. Бонусы, фриспины и множители."/>
-  <meta name="keywords" content="Anubis Wrath, слот, играть онлайн, демо слот, Египет слот, казино игра"/>
+
+  <meta name="description" content="Anubis Wrath — онлайн слот в стиле Древнего Египта. Подробный обзор игры, бонусов, символов и механики. Играй демо или на деньги."/>
+  <meta name="keywords" content="Anubis Wrath, слот онлайн, играть бесплатно, казино слот, демо слот Египет"/>
+
   <meta name="robots" content="index, follow"/>
 
-  <!-- OG -->
-  <meta property="og:title" content="Anubis Wrath — мистический слот"/>
-  <meta property="og:description" content="Играй в демо или на деньги. Бонусные функции и фриспины."/>
-  <meta property="og:type" content="website"/>
-
-  <link rel="icon" href="/favicon.ico"/>
-
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "Anubis Wrath",
-    "genre": "Slot",
-    "applicationCategory": "Game",
-    "operatingSystem": "Web Browser"
-  }
-  </script>
-
-  <!-- FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Можно ли играть бесплатно?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Да, доступен демо режим без вложений."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Есть ли реальные выигрыши?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Да, при игре на деньги возможны выигрыши."
-        }
-      }
-    ]
-  }
-  </script>
-
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #2a004f, #000);
-      color: #fff;
+    body{
+      margin:0;
+      font-family:Arial;
+      background:radial-gradient(circle at top,#2a004f,#000);
+      color:#fff;
     }
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #2a004f, #000);
-      position: relative;
-      overflow: hidden;
+    header{
+      position:sticky;
+      top:0;
+      background:#0a0014ee;
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      padding:10px;
+      border-bottom:1px solid #2d0057;
+      flex-wrap:wrap;
     }
 
-    h1 {
-      font-size: 56px;
-      color: #ff7a00;
-      text-shadow: 0 0 20px #ff7a00;
-      margin-bottom: 10px;
+    header a{
+      color:#fff;
+      text-decoration:none;
+      padding:8px 12px;
+      background:#1a0033;
+      border-radius:8px;
+      font-size:14px;
     }
 
-    p {
-      color: #caa6ff;
+    header a:hover{
+      background:#ff7a00;
+      color:#000;
     }
 
-    /* BUTTONS */
-    .btn-container {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    .hero{
+      text-align:center;
+      padding:100px 20px;
     }
 
-    .fire-btn {
-      position: relative;
-      padding: 16px 28px;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #000;
-      background: linear-gradient(45deg, #ff6a00, #ffb300);
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 0 20px rgba(255, 120, 0, 0.6);
-      overflow: hidden;
-      transition: transform 0.2s;
-      animation: pulse 1.5s infinite;
+    h1{
+      font-size:clamp(36px,5vw,80px);
+      color:#ff7a00;
+      margin:0;
+      text-shadow:0 0 25px #ff7a00;
     }
 
-    .fire-btn:hover {
-      transform: scale(1.08);
+    .btn{
+      display:inline-block;
+      margin:10px;
+      padding:15px 25px;
+      background:linear-gradient(45deg,#ff6a00,#ffb300);
+      color:#000;
+      font-weight:bold;
+      text-decoration:none;
+      border-radius:10px;
+      animation:pulse 1.5s infinite;
     }
 
-    /* flame animation overlay */
-    .fire-btn::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,140,0,0.6), transparent 60%);
-      animation: flame 1s infinite linear;
-      opacity: 0.6;
+    @keyframes pulse{
+      0%{box-shadow:0 0 10px #ff6a00;}
+      50%{box-shadow:0 0 30px #ffb300;}
+      100%{box-shadow:0 0 10px #ff6a00;}
     }
 
-    @keyframes flame {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:70px 20px;
     }
 
-    @keyframes pulse {
-      0% { box-shadow: 0 0 10px #ff6a00; }
-      50% { box-shadow: 0 0 30px #ffb300; }
-      100% { box-shadow: 0 0 10px #ff6a00; }
+    h2{
+      color:#ff9a2f;
+      font-size:30px;
     }
 
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
+    .card{
+      background:#120022;
+      padding:20px;
+      border-radius:12px;
+      border:1px solid #2d0057;
+      margin-top:15px;
+      line-height:1.6;
     }
 
-    h2 {
-      color: #ff9a2f;
-    }
-
-    .card {
-      background: #120022;
-      border: 1px solid #2d0057;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      color: #777;
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#777;
     }
   </style>
 </head>
@@ -166,43 +106,151 @@
 <body>
 
 <header>
-  <h1>ANUBIS WRATH</h1>
-  <p>Мистический слот Древнего Египта</p>
-
-  <div class="btn-container">
-    <a class="fire-btn" href="https://lbgame777.xyz/3nsZZj">
-      Играть на деньги
-    </a>
-
-    <a class="fire-btn" href="https://lbgame777.xyz/3nsZZj">
-      Играть демо
-    </a>
-  </div>
+  <a href="#about">Обзор</a>
+  <a href="#gameplay">Геймплей</a>
+  <a href="#demo">Демо</a>
+  <a href="#bonuses">Бонусы</a>
+  <a href="#symbols">Символы</a>
+  <a href="#faq">FAQ</a>
 </header>
 
-<section>
-  <h2>Обзор</h2>
+<div class="hero">
+  <h1>ANUBIS WRATH</h1>
+  <p>Полный обзор слота с механиками, бонусами и стратегией игры</p>
+
+  <div>
+    <a class="btn" href="https://lbgame777.xyz/3nsZZj">Играть на деньги</a>
+    <a class="btn" href="https://lbgame777.xyz/3nsZZj">Играть демо</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>Обзор слота Anubis Wrath</h2>
+
   <div class="card">
-    Слот Anubis Wrath выполнен в стиле Древнего Египта с бонусами, фриспинами и множителями.
+    Anubis Wrath — это современный видеослот, созданный в тематике Древнего Египта. 
+    Игра сочетает атмосферную графику, мистическую музыку и классические механики казино-слотов.
+
+    <br><br>
+    Основная идея слота основана на мифологии Анубиса — древнеегипетского бога загробного мира. 
+    Игрок погружается в атмосферу пирамид, золотых артефактов и скрытых сокровищ.
+
+    <br><br>
+    Слот подходит как для новичков, так и для опытных игроков благодаря простому управлению и понятной механике выплат.
   </div>
 </section>
 
-<section>
-  <h2>Особенности</h2>
-  <div class="card">🔥 Бонусные вращения</div>
-  <div class="card">⚡ Множители выигрыша</div>
-  <div class="card">🎮 Демо режим</div>
+<!-- GAMEPLAY -->
+<section id="gameplay">
+  <h2>Геймплей и механика</h2>
+
+  <div class="card">
+    Игровое поле состоит из стандартных барабанов, на которых выпадают символы. 
+    Для выигрыша необходимо собрать комбинации одинаковых символов на активных линиях выплат.
+
+    <br><br>
+    В игре присутствует система множителей, которая увеличивает потенциальный выигрыш. 
+    Также предусмотрены специальные символы, активирующие бонусные функции.
+
+    <br><br>
+    Особенность слота — динамичный игровой процесс с частыми мини-выигрышами и редкими, но крупными бонусами.
+  </div>
 </section>
 
-<section>
-  <h2>FAQ</h2>
-  <div class="card">Да, можно играть бесплатно</div>
-  <div class="card">Да, есть реальные выигрыши</div>
+<!-- DEMO -->
+<section id="demo">
+  <h2>Демо режим</h2>
+
+  <div class="card">
+    Демо версия позволяет полностью изучить слот без финансовых рисков. 
+    Игрок получает виртуальный баланс и может тестировать все функции игры.
+
+    <br><br>
+    Это особенно полезно для новичков, которые хотят понять механику слота перед игрой на реальные деньги.
+
+    <br><br>
+    Демо режим полностью идентичен основной игре, включая бонусные функции и вероятность выпадения символов.
+  </div>
+
+  <a class="btn" href="https://lbgame777.xyz/3nsZZj">Запустить демо</a>
+</section>
+
+<!-- BONUSES -->
+<section id="bonuses">
+  <h2>Бонусные функции</h2>
+
+  <div class="card">
+    Бонусная система является ключевой частью игрового процесса Anubis Wrath.
+
+    <br><br>
+    • Фриспины — бесплатные вращения барабанов  
+    • Множители — увеличение выигрыша до x100 и выше  
+    • Бонусные раунды — отдельные игровые режимы с наградами  
+    • Специальные символы — активируют скрытые функции  
+
+    <br><br>
+    Бонусы значительно увеличивают шанс на крупный выигрыш и делают игровой процесс более динамичным.
+  </div>
+
+  <a class="btn" href="https://lbgame777.xyz/3nsZZj">Активировать бонус</a>
+</section>
+
+<!-- SYMBOLS -->
+<section id="symbols">
+  <h2>Символы слота</h2>
+
+  <div class="card">
+    В игре используются тематические символы, связанные с Древним Египтом:
+
+    <br><br>
+    Анубис (Wild) — заменяет другие символы  
+    Скарабеи — обычные выплаты  
+    Фараоны — высокооплачиваемые символы  
+    Золотые артефакты — бонусные элементы  
+
+    <br><br>
+    Каждый символ имеет свою ценность и влияет на итоговый результат вращения.
+  </div>
+
+  <a class="btn" href="https://lbgame777.xyz/3nsZZj">Попробовать слот</a>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+
+  <div class="card">
+    <b>Можно ли играть бесплатно?</b><br>
+    Да, доступен полноценный демо режим без регистрации.
+  </div>
+
+  <div class="card">
+    <b>Есть ли реальные выигрыши?</b><br>
+    Да, при игре на деньги можно получать реальные выплаты.
+  </div>
+
+  <div class="card">
+    <b>Нужно ли скачивать игру?</b><br>
+    Нет, слот работает прямо в браузере.
+  </div>
+
+  <div class="card">
+    <b>Подходит ли игра для мобильных?</b><br>
+    Да, слот полностью адаптирован под смартфоны и планшеты.
+  </div>
+
+  <div class="card">
+    <b>Как активируются бонусы?</b><br>
+    Бонусы запускаются при выпадении специальных символов.
+  </div>
+
+  <a class="btn" href="https://lbgame777.xyz/3nsZZj">Играть сейчас</a>
 </section>
 
 <footer>
-  © 2026 Anubis Wrath
+  © 2026 Anubis Wrath — SEO Landing Page
 </footer>
 
 </body>
-</html>
+  </html>
